@@ -1,0 +1,7 @@
+2025-05-17 14:26:01,488 INFO: \U0001f4c5 Already sent today: 0. Remaining: 50 messages.
+
+2025-05-17 14:26:01,489 INFO: [1] Sending to 18402427954@text.messages.network using message1.txt...
+2025-05-17 14:26:07,623 INFO: \u2705 Message sent.
+2025-05-17 14:26:07,624 INFO: \u23f3 Waiting 1 seconds before next message...
+2025-05-17 14:26:08,660 INFO: 
+\u2705 Done for today.
