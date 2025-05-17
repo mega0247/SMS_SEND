@@ -1,0 +1,30 @@
+name: Validate License Script Test
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  validate_license:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install pycryptodome
+
+    - name: Run license validation test
+      run: |
+        python generate_license.py
+        python validate_license.py license_user123.key user123
